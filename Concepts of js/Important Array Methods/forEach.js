@@ -16,6 +16,7 @@ array: The entire original array itself (in case you need to reference it).
 You can choose to grab just the first one, the first two (like your myFunc(number, index) example), or all three!
 */
 
+
 const numbers = [4,2,5,8];
 
 function myFunc(number, index) {
