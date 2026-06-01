@@ -92,4 +92,4 @@ const myLegends = [
 ];
 const sortedClasses = [...myLegends].sort((a,b) => a.class.localeCompare(b.class))
 // Since we cant sort string like numbers so we use localeCompare
-console.log(sortedClasses);
+// console.log(sortedClasses);
