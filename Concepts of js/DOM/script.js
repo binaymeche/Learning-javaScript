@@ -66,3 +66,43 @@
 
 // 7
 // loop
+//
+// available loops; forEach, for of, for
+// Note: We can't use forEach to iterate through HTML Collection
+// let allNavItem = document.getElementsByTagName("a");
+// console.log(allNavItem);
+//
+// for loop
+// for(let i = 0; i < allNavItem.length; i++) {
+//   console.log(allNavItem[i]);
+//   const navItem = allNavItem[i];
+//   navItem.style.backgroundColor = "#fff";
+//   navItem.style.color = "#06c1ff"
+//   navItem.style.fontWeight = "bold"
+// }
+//
+// for of
+// for(let nav  of allNavItem) {
+//   console.log(nav);
+//   const navItem = nav;
+//   nav.style.backgroundColor = "#f3cf02";
+//   nav.style.color = "#9b06ff"
+//   nav.style.fontWeight = "bold"
+// }
+//
+// forEach
+// const arrNav = Array.from(allNavItem) // changing the HTML collection to node list to use the array method -> forEach
+// arrNav.forEach(element => {
+//   element.style.backgroundColor = "#f3cf02";
+//   element.style.color = "#9b06ff"
+//   element.style.fontWeight = "bold"
+// });
+
+
+// 8 
+// let navItems = document.querySelectorAll("a"); // no need for converting into array cuz it gives nodeList
+// console.log(navItems)
+// navItems.forEach ((element) => {
+//   element.style.fontStyle = "Italic"
+//   element.style.textDecoration = "underline";
+// })
