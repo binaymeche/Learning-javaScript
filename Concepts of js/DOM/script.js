@@ -106,3 +106,32 @@
 //   element.style.fontStyle = "Italic"
 //   element.style.textDecoration = "underline";
 // })
+
+
+// 9 
+// innerHTML
+//
+// const headline = document.querySelector(".headline");
+// console.log(headline.innerHTML)
+// headline.innerHTML = "<h1> Headline innerHTML changed </h1>"
+// headline.innerHTML += "<button class = \"btn\"> Change me </button>"
+// console.log(headline.innerHTML)
+
+
+// 10
+// classList
+//
+// const sectionTodo = document.querySelector(".section-todo");
+// sectionTodo.classList.add("bg-dark"); // add
+// console.log(sectionTodo);
+// sectionTodo.classList.remove("bg-dark") // remove
+// console.log(sectionTodo.classList.contains("bg-white")) // checks the element has the given class name.
+
+
+// 11
+// toggle
+// 
+// given class = "bg-dark"
+// const sectionTodo = document.querySelector(".section-todo");
+// sectionTodo.classList.toggle("bg-dark"); // if the class isnt present in the element then it will provide the given class provided to it.
+// sectionTodo.classList.toggle("bg-dark"); // And if the given class is present in the element then it will remove the given class

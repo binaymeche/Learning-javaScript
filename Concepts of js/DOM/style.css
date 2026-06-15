@@ -71,6 +71,11 @@ a{
   text-align: center;
 }
 
+.bg-dark {
+  background: #000;
+  color: #fff;
+}
+
 .form-todo{
   /* border: 2px solid red; */
   margin-top: 1rem;
