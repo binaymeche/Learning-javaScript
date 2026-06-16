@@ -135,3 +135,104 @@
 // const sectionTodo = document.querySelector(".section-todo");
 // sectionTodo.classList.toggle("bg-dark"); // if the class isnt present in the element then it will provide the given class provided to it.
 // sectionTodo.classList.toggle("bg-dark"); // And if the given class is present in the element then it will remove the given class
+
+
+// const header = document.querySelector(".header")
+// console.log(header.classList);
+// header.classList.add("bg-dark")
+
+
+
+
+
+
+// Add new HTML elements to page
+
+
+// 12.
+// innerHTML to add HTML element
+//
+// const todoList = document.querySelector(".todo-list")
+// // console.log(todoList.innerHTML);
+// // todoList.innerHTML = "<li>New Todo Added</li>";
+// todoList.innerHTML += `<li>New Todo Added</li>`
+// todoList.innerHTML += `<li>Cook Food</li>`
+//
+// when to not to use 
+/*
+It render element again and again causing problem in time management.
+It takes much time. Kinda bit of laggy issue will create 
+*/
+//
+// when to use
+/* 
+When you want to change the whole block of element.
+Use it for changing the html not for adding the the element inside the HTML
+*/
+
+
+
+// const newTodoItem = document.createElement("li");
+// const prependUse = document.createElement("li");
+// const appendUse = document.createElement("li");
+//
+// const newTodoItemText = document.createTextNode("Greet your seniors") 
+//long way to solve it 
+//
+// newTodoItem.append(newTodoItemText);
+//
+// prependUse.textContent = "This is prepend Comes before"
+// appendUse.textContent = "This is append Comes after"
+// const todoList = document.querySelector(".todo-list");
+// todoList.prepend(prependUse)
+// todoList.append(appendUse)
+// console.log(newTodoItem);
+//
+// const todo1 =document.querySelector(".todo-list li")
+// todo1.remove()
+// console.log(todo1)
+
+
+
+// before and after
+// const newTodoItem = document.createElement("li");
+// const newTodoItem1 = document.createElement("button")
+// newTodoItem.textContent = "Hello this is Before";
+// newTodoItem1.textContent = "Add to list";
+// const todo = document.querySelector(".todo-list");
+
+// todo.after(newTodoItem1);
+// todo.before(newTodoItem);
+
+
+
+// Clone nodes
+//
+// const ul = document.querySelector(".todo-list");
+// const li = document.createElement("li");
+// li.textContent = "New \"li\" is created"
+// const liCopy = li.cloneNode(true)
+// ul.append(li);
+// ul.prepend(liCopy);
+
+
+
+// static list and live list
+/* 
+querySelector gives us the static list no changes in the nodeList
+//
+getElements gives us the live list changes in the nodelist
+*/
+// const lis = document.querySelectorAll(".todo-list li");
+// const sixthli = document.createElement("li");
+// sixthli.textContent = "item 6"
+// const ul = document.querySelector(".todo-list")
+// const listItems = ul.getElementsByTagName("li")
+// ul.append(sixthli);
+// // console.log(lis) // nodeList is still five even though there are 6 element in the document now. It is called static
+
+// // listItems.append(sixthli);
+// console.log(listItems)
+
+
+
