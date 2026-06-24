@@ -12,7 +12,7 @@ const rawSteamCatalog = [
 // 1: the "RPG Sale" filter and discount
 const discountedRPGs = rawSteamCatalog.filter(rgpGame => rgpGame.genre === "RPG")
 .map(game => ({
-  ...game, // copying the object so it doesnt mutateda
+  ...game, // copying the object so it doesnt mutatedata
   price: game.price / 2
 })); // 50% disount
 // console.log(discountedRPGs)

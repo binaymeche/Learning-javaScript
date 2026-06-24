@@ -118,5 +118,4 @@ handleTyping("MOMO");
 // clearTimeout(id);
 // notification = false;
 // console.log(notification);
-// },5000)
-
+// },5000);
