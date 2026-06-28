@@ -83,6 +83,6 @@ changeText(myh1, "Heading 1", "violet", 1000, () => {
 
 
 
-changeText(myh6, "Heading 6", "violet", 1000, () => {
+// changeText(myh6, "Heading 6", "violet", 1000, () => {
                         
-},() => { console.log("Heading 6 Doesn't Exist")})
+// },() => { console.log("Heading 6 Doesn't Exist")})
