@@ -14,7 +14,37 @@ function sendRequest(method, url) {
             }
         };
 
+        xhr.onerror = () => {const URL = "https://jsonplaceholder.typicode.com/posts";
+
+function sendRequest(method, url) {
+    return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+
+        xhr.open(method, url);
+
+        xhr.onload = () => {
+            if (xhr.status >= 200 && xhr.status < 300) {
+                resolve(xhr.response);
+            } else {
+                reject(new Error("Something went wrong"));
+            }
+        };
+
         xhr.onerror = () => {
+            reject(new Error("Something went wrong"));
+        };
+
+        xhr.send();
+    });
+}
+
+sendRequest("GET", URL)
+    .then((response) => {
+        console.log(response);
+    })
+    .catch((err) => {
+        console.error(err);
+    });
             reject(new Error("Something went wrong"));
         };
 
